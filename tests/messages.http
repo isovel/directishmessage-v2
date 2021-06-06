@@ -1,5 +1,5 @@
 ### Unauthorized
-GET http://localhost:3000/api/v{{api_version}}/messages
+GET http://localhost:3000/api/v{{api_version}}/id
 Accept: application/json
 
 > {%
@@ -9,7 +9,7 @@ client.test("Request executed successfully", function() {
 %}
 
 ### Authorized
-GET http://localhost:3000/api/v{{api_version}}/messages
+GET http://localhost:3000/api/v{{api_version}}/id
 Accept: application/json
 Authorization: {{auth_token}}
 
